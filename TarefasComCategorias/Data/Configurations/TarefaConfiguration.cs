@@ -22,7 +22,7 @@ namespace TarefasComCategorias.Data.Configurations
 
             builder
                 .Property(tarefa => tarefa.DataCriacao)
-                .ValueGeneratedOnAdd()
+                .HasDefaultValue(new DateOnly(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
                 .HasColumnName("data_criacao_tarefa");
 
             builder

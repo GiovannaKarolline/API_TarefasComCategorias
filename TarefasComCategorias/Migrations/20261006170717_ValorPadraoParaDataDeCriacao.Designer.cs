@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TarefasComCategorias.Data;
 
@@ -11,9 +12,11 @@ using TarefasComCategorias.Data;
 namespace TarefasComCategorias.Migrations
 {
     [DbContext(typeof(TarefasDbContext))]
-    partial class TarefasDbContextModelSnapshot : ModelSnapshot
+    [Migration("20261006170717_ValorPadraoParaDataDeCriacao")]
+    partial class ValorPadraoParaDataDeCriacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
