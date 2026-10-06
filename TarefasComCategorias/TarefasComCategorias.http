@@ -1,0 +1,6 @@
+@TarefasComCategorias_HostAddress = http://localhost:5179
+
+GET {{TarefasComCategorias_HostAddress}}
+Accept: application/json
+
+###
